@@ -32,7 +32,7 @@ Plataforma web para la gestión de servicio social universitario con firma digit
 ## 📁 Estructura del proyecto
  
 ```
-feriassocial/
+crypto-final-project/
 ├── backend/
 │   ├── index.js          # Servidor Express + todos los endpoints API
 │   └── database.js       # Inicialización de SQLite y migraciones
@@ -76,7 +76,7 @@ npm --version
  
 **Opción A — Clonar con Git:**
 ```bash
-git clone https://github.com/tu-usuario/feriassocial.git
+git clone https://github.com/tu-usuario/crypto-final-project.git
 cd feriassocial
 ```
  
@@ -85,7 +85,7 @@ cd feriassocial
 2. Extrae el archivo ZIP en la carpeta que prefieras
 3. Abre una terminal y navega hasta esa carpeta:
 ```bash
-cd ruta/a/la/carpeta/feriassocial
+cd ruta/a/la/carpeta/crypto-final-project
 ```
  
 ---
