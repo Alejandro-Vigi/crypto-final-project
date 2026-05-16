@@ -16,6 +16,8 @@ Plataforma web para la gestión de servicio social universitario con firma digit
 - [Funcionalidades principales](#funcionalidades-principales)
 - [Arquitectura de seguridad](#arquitectura-de-seguridad)
 - [Endpoints del API](#endpoints-del-api)
+- [Problemas frecuentes](#problemas-frecuentes)
+- [Intregrantes del Equipo](#integrantes-del-equipo)
 ---
  
 ## 🛠 Tecnologías utilizadas
@@ -36,6 +38,7 @@ crypto-final-project/
 ├── backend/
 │   ├── index.js          # Servidor Express + todos los endpoints API
 │   └── database.js       # Inicialización de SQLite y migraciones
+|   └── seed.mjs          # Script de datos de ejemplo (opcional)
 ├── src/
 │   ├── pages/
 │   │   ├── Home.jsx      # Landing page pública
@@ -47,7 +50,6 @@ crypto-final-project/
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
-├── seed.js               # Script de datos de ejemplo (opcional)
 ├── package.json
 └── README.md
 ```
@@ -147,7 +149,7 @@ Puedes registrar alumnos desde la interfaz web y crear servicios sociales desde 
  
 ### Opción B — Cargar datos de ejemplo (recomendado para pruebas)
  
-El proyecto incluye el script `seed.js` que carga **15 alumnos** y **10 servicios sociales** de instituciones reales para que puedas explorar la plataforma de inmediato.
+El proyecto incluye el script `seed.mjs` que carga **15 alumnos** y **10 servicios sociales** de instituciones reales para que puedas explorar la plataforma de inmediato.
  
 **Importante:** Ejecuta el seed *después* de haber levantado el servidor al menos una vez (para que la base de datos se cree), y con el backend **detenido**:
  
@@ -155,7 +157,7 @@ El proyecto incluye el script `seed.js` que carga **15 alumnos** y **10 servicio
 # 1. Detén el servidor si está corriendo (Ctrl + C)
  
 # 2. Ejecuta el script de datos de ejemplo
-node seed.js
+node backend/seed.mjs
  
 # 3. Vuelve a iniciar el proyecto normalmente
 npm run dev:all
