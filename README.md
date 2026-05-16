@@ -77,7 +77,7 @@ npm --version
 **Opción A — Clonar con Git:**
 ```bash
 git clone https://github.com/tu-usuario/crypto-final-project.git
-cd feriassocial
+cd crypto-final-project
 ```
  
 **Opción B — Descargar ZIP:**
