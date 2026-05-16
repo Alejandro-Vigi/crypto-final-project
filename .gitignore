@@ -1,0 +1,49 @@
+# --- Dependencias y Terceros ---
+# Se ignora cualquier carpeta y subcarpeta (como backend/)
+node_modules/
+jspm_packages/
+.pnp
+.pnp.js
+
+# --- Bases de Datos Locales  ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Producción / Compilación ---
+/dist
+/dist-ssr
+/build
+out/
+
+# --- Variables de Entorno (Datos Sensibles) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.sample
+!.env.example
+
+# --- Logs y Debugging ---
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Editores de Código e IDEs ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Archivos del Sistema Operativo ---
+.DS_Store
+Thumbs.db
