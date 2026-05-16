@@ -76,7 +76,7 @@ npm --version
  
 **Opción A — Clonar con Git:**
 ```bash
-git clone https://github.com/tu-usuario/crypto-final-project.git
+git clone https://github.com/Alejandro-Vigi/crypto-final-project.git
 cd crypto-final-project
 ```
  
