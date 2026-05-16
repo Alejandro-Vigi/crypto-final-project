@@ -92,33 +92,36 @@ cd ruta/a/la/carpeta/crypto-final-project
  
 ---
  
-### 2. Instala las dependencias del proyecto
- 
+### 2. Instala las dependencias del proyecto (Frontend y Backend)
+Este proyecto cuenta con entornos independientes para el frontend y el backend. Es necesario instalar las dependencias en ambas carpetas para que el sistema funcione correctamente:
+**Paso A — Instalar dependencias del Frontend (Raíz):**
 Desde la raíz del proyecto, ejecuta:
- 
 ```bash
 npm install
 ```
- 
-Este comando instala todas las dependencias tanto del frontend (React, Vite, Tailwind) como del backend (Express, better-sqlite3, bcrypt, etc.) definidas en el `package.json`.
- 
-> ⚠️ Si aparece algún error relacionado con `better-sqlite3`, puede deberse a la compilación de módulos nativos. En ese caso ejecuta:
-> ```bash
-> npm rebuild better-sqlite3
-> ```
- 
+Este comando instalará los paquetes necesarios para la interfaz (React, Vite, Tailwind CSS v4, etc.).
+**Paso B — Instalar dependencias del Backend:**
+Muévete a la carpeta del servidor e instala sus módulos correspondientes (Express, nodemon, bcrypt, etc.):
+```bash
+cd backend
+npm install
+```
+**Paso C — Reconstruir la base de datos nativa:**
+Debido a que `better-sqlite3` compila código en C++ nativo para tu sistema operativo, ejecuta el siguiente comando (aún dentro de la carpeta `backend`) para asegurar su compatibilidad:
+```bash
+npm rebuild better-sqlite3
+```
+**Paso D — Regresar a la raíz del proyecto:**
+Una vez instalada la lógica del backend, regresa a la carpeta principal para poder iniciar la plataforma:
+```bash
+cd ..
+```
 ---
- 
 ### 3. Verifica la estructura de archivos
- 
-Asegúrate de que la carpeta `backend/` esté en la raíz del proyecto y contenga los archivos `index.js` y `database.js`.
- 
+Asegúrate de que la carpeta `backend/` esté en la raíz del proyecto y contenga los archivos `index.js` y `database.js`, y que ambas carpetas (`/` y `/backend`) cuenten ahora con su respectivo directorio `node_modules`.
 ---
- 
 ## ▶️ Ejecución del proyecto
- 
-Para iniciar el backend y el frontend al mismo tiempo, ejecuta desde la raíz del proyecto:
- 
+Para iniciar el backend y el frontend al mismo tiempo en paralelo, ejecuta desde la raíz del proyecto:
 ```bash
 npm run dev:all
 ```
